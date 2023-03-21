@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/static/index.css">
+  <title>review</title>
+</head>
+<body>
+  <h1>contact page</h1>
+
+    
+    <div class="center">
+
+
+        <table>
+            <center><table border="1"></center>
+
+
+
+
+
+            <tr>
+
+
+                <th>Client_Name</th>
+                <th width="450">Contact_Number</th>
+                <th width="450">Product_Name</th>
+                <th width="450">Location</th>
+                <th width="450">Date_Of_Enquiry</th>
+                <th width="450">Estimated_Quote</th>
+                <th width="450">Ivoice_Amount</th>
+                <th width="450">Profit</th>
+
+            </tr>
+
+            {% for item in data %}
+
+            <tr>
+                <td> {{item[0]}} </td>
+                <td> {{item[1]}} </td>
+                <td> {{item[2]}} </td>
+                <td> {{item[3]}} </td>
+                <td> {{item[4]}} </td>
+                <td> {{item[5]}} </td>
+                <td> {{item[6]}} </td>
+                <td> {{item[7]}} </td>
+             
+            </tr>
+            {% endfor %} 
+        </table>
+
+    </div>
+</body>
+</html>
